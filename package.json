@@ -1,6 +1,6 @@
 {
   "name": "@kudoo/website",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Kudoo marketing website",
   "main": "index.js",
   "engines": {
