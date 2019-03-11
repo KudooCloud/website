@@ -4,7 +4,7 @@
   "description": "Kudoo marketing website",
   "main": "index.js",
   "engines": {
-    "node": "^8.1.4"
+    "node": "^10.13"
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development --devtool eval --hot --history-api-fallback --progress --colors --inline --host 127.0.0.1",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "@babel/runtime": "7.0.0-beta.46",
-    "@kudoo/components": "^1.0.1",
+    "@kudoo/components": "^2.0.2",
     "@lingui/react": "^2.4.2",
     "@material-ui/core": "3.1.2",
     "axios": "^0.18.0",

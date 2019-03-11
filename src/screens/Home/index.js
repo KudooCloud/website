@@ -10,7 +10,6 @@ import {
   ErrorBoundary,
   withStyles,
   Footer,
-  Button,
   withStylesProps,
   License,
 } from '@kudoo/components';
@@ -20,7 +19,7 @@ import ProductBlock from './ProductBlock';
 import FeatureBlock from './FeatureBlock';
 import Tablet from './Tablet';
 import TeamMember from './TeamMember';
-import PricingPeriod from './PricingPeriod';
+// import PricingPeriod from './PricingPeriod';
 import SupportForm from './SupportForm';
 import NewsLetter from './NewsLetter';
 import JustinImage from 'images/justin.jpg';
@@ -76,15 +75,6 @@ class Home extends Component<Props> {
           <div className={classes.bannerTitle}>Where big ideas grow</div>
           <div className={classes.bannerSubtitle}>
             Elegant timesheets, seamless invoicing.
-          </div>
-          <div>
-            <Button
-              title="Start your free trial"
-              classes={{ component: classes.freetrialButton }}
-              applyBorderRadius
-              width={250}
-              onClick={this._handleFreeTrialButtonClick}
-            />
           </div>
         </div>
       </Gradient>
@@ -306,7 +296,7 @@ class Home extends Component<Props> {
     return (
       <div className={classes.pricingWrapper} id="pricing">
         <h1 className={classes.sectionTitle}>Pricing</h1>
-        <PricingPeriod
+        {/*        <PricingPeriod
           onChange={index => {
             this.setState({ selectedPricingPeriod: index });
           }}
@@ -314,6 +304,7 @@ class Home extends Component<Props> {
         <div className={classes.thrityDayTrial}>
           Sign up for our 30 days free trial
         </div>
+        */}
         <div className={classes.pricings}>
           <License
             {...this.props}
