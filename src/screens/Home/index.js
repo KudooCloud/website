@@ -77,7 +77,7 @@ class Home extends Component<Props> {
         <div className={classes.banner}>
           <div className={classes.bannerTitle}>Where big ideas grow</div>
           <div className={classes.bannerSubtitle}>
-            Elegant timesheets, seamless invoicing.
+            Healthcare for the modern era.
           </div>
         </div>
       </Gradient>
@@ -398,7 +398,7 @@ class Home extends Component<Props> {
                 </Gradient>
                 <div className={classes.supportInfo}>
                   <div className={classes.supportInfoTitle}>Contact Us</div>
-                  <div className={classes.supportInfoText}>+61 03 45052405</div>
+                  <div className={classes.supportInfoText}>+61 468 967 210</div>
                   <div className={classes.supportInfoText}>
                     support@kudoo.cloud
                   </div>

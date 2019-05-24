@@ -5,7 +5,8 @@ import { compose } from 'recompose';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import withWidth, { isWidthDown } from '@material-ui/core/withWidth';
 import scrollToElement from 'scroll-to-element';
-import { withStyles, Button, withStylesProps } from '@kudoo/components';
+//import { withStyles, Button, withStylesProps } from '@kudoo/components';
+import { withStyles, withStylesProps } from '@kudoo/components';
 import { HeaderStyles as styles } from './styles';
 
 type Props = {
@@ -70,7 +71,8 @@ class Header extends React.Component<Props, any> {
   };
 
   _renderBigMenu() {
-    const { classes, theme, showLinks } = this.props;
+    const { classes, showLinks } = this.props;
+    //const { classes, theme, showLinks } = this.props;
     return (
       <div className={classes.bigHeader}>
         <a className={classes.logoWrapper} href="https://kudoo.io/">
@@ -87,6 +89,7 @@ class Header extends React.Component<Props, any> {
               onClick={this._scrollTo('product')}>
               Product
             </a>
+            {/*
             <a
               className={classes.headerLink}
               onClick={this._scrollTo('features')}>
@@ -97,6 +100,7 @@ class Header extends React.Component<Props, any> {
               onClick={this._scrollTo('pricing')}>
               Pricing
             </a>
+            */}
             <a className={classes.headerLink} onClick={this._scrollTo('team')}>
               Team
             </a>
@@ -110,6 +114,7 @@ class Header extends React.Component<Props, any> {
           <div className={classes.headerMiddle} />
         )}
         <div className={classes.headerRightPart}>
+          {/*
           <Button
             classes={{
               component: classes.loginButton,
@@ -126,6 +131,7 @@ class Header extends React.Component<Props, any> {
             applyBorderRadius
             width={200}
           />
+          */}
         </div>
       </div>
     );
