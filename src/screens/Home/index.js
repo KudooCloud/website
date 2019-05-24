@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import cx from 'classnames';
 import { compose } from 'recompose';
 import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
+// import Hidden from '@material-ui/core/Hidden';
 import withWidth from '@material-ui/core/withWidth';
 import { ToastContainer } from 'react-toastify';
 import {
@@ -11,13 +11,13 @@ import {
   withStyles,
   Footer,
   withStylesProps,
-  License,
+  //  License,
 } from '@kudoo/components';
 import Header from './Header';
 import Gradient from './Gradient';
 import ProductBlock from './ProductBlock';
-import FeatureBlock from './FeatureBlock';
-import Tablet from './Tablet';
+// import FeatureBlock from './FeatureBlock';
+// import Tablet from './Tablet';
 import TeamMember from './TeamMember';
 // import PricingPeriod from './PricingPeriod';
 import SupportForm from './SupportForm';
@@ -27,6 +27,8 @@ import JadeImage from 'images/jade.jpg';
 import TomImage from 'images/tom.png';
 import SarjuImage from 'images/sarju.jpg';
 import styles, { toastStyle } from './styles';
+// JT -Commented out the Features section until we relaunch the CIS
+/*
 import dashboardImage from 'images/dashboard.png';
 import attachmentsImage from 'images/attachments.png';
 import approvalsImage from 'images/approvals.png';
@@ -43,6 +45,7 @@ const screenshotMap = {
   timesheets: timesheetsImage,
 };
 
+*/
 type Props = {
   // ...$Exact<withStylesFlowType>,
 };
@@ -139,9 +142,11 @@ class Home extends Component<Props> {
   };
 
   _renderFeatures() {
-    const { classes, width } = this.props;
+    //const { classes, width } = this.props;
+    const { classes } = this.props;
     return (
       <div className={classes.featureWrapper} id="features">
+        {/*
         <h1
           className={cx(
             classes.sectionTitle,
@@ -232,6 +237,7 @@ class Home extends Component<Props> {
             </Grid>
           </Grid>
         </div>
+                */}
       </div>
     );
   }
@@ -240,9 +246,12 @@ class Home extends Component<Props> {
     const { classes } = this.props;
     return (
       <div className={classes.integrationWrapper}>
+        {/*
         <h1 className={classes.sectionTitle}>Integrations</h1>
+        */}
         <Grid container>
           {/* <Grid item xs={12} sm={6} /> */}
+          {/*
           <Grid item xs={12}>
             <div className={classes.integrationTitle}>
               Connect with your favourite apps
@@ -279,6 +288,7 @@ class Home extends Component<Props> {
               </Grid>
             </div>
           </Grid>
+          */}
         </Grid>
       </div>
     );
@@ -290,12 +300,14 @@ class Home extends Component<Props> {
 
   _renderPricing() {
     const { classes } = this.props;
-    const { selectedCurrency } = this.state;
+    //    const { selectedCurrency } = this.state;
     // const { selectedPricingPeriod } = this.state;
     // const isMonthly = selectedPricingPeriod === PricingPeriodType.MONTHLY;
     return (
       <div className={classes.pricingWrapper} id="pricing">
+        {/*
         <h1 className={classes.sectionTitle}>Pricing</h1>
+        */}
         {/*        <PricingPeriod
           onChange={index => {
             this.setState({ selectedPricingPeriod: index });
@@ -304,7 +316,7 @@ class Home extends Component<Props> {
         <div className={classes.thrityDayTrial}>
           Sign up for our 30 days free trial
         </div>
-        */}
+
         <div className={classes.pricings}>
           <License
             {...this.props}
@@ -319,6 +331,7 @@ class Home extends Component<Props> {
             onConvertCurrencyDDChange={this._onConvertCurrencyDDChange}
           />
         </div>
+          */}
       </div>
     );
   }
